@@ -11,5 +11,4 @@ public class Converter {
         // Assuming the conversion rate is 1 Dollar = 75 Rubles
         return value / 75;
     }
-
 }
