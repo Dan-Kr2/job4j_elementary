@@ -7,20 +7,20 @@ class ConverterTest {
 
     @Test
     void whenConvert140RblThen2Euro() {
-        float input = 140;
-        float expected = 2;
+        double input = 140;
+        double expected = 2;
         double output = Converter.rubleToEuro(input);
-        float value = 0.0001f;
+        double value = 0.0001f;
         assertThat(output).isEqualTo(expected, withPrecision(value));
     }
 
 
     @Test
     void whenConvert180RblThen3Dollar() {
-        float input = 180;
-        float expected = 3;
+        double input = 180;
+        double expected = 3;
         double output = Converter.rubleToDollar(input);
-        float value = 0.0001f;
+        double value = 0.0001f;
         assertThat(output).isEqualTo(expected, withPrecision(value));
     }
 }
