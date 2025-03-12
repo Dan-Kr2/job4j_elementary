@@ -16,7 +16,6 @@ public class MathCalculator {
     public static double sumOfMinusAndDel (double first, double second){
         return ru.job4j.math.MathFunction.minus(first, second) + ru.job4j.math.MathFunction.del(first, second);
     }
-
     public static double sumOfAllOps (double first, double second){
         return ru.job4j.math.MathFunction.sum(first, second)+ru.job4j.math.MathFunction.minus(first, second)+ru.job4j.math.MathFunction.del(first, second)+ru.job4j.math.MathFunction.multiply(first, second);
     }
