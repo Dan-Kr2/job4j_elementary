@@ -8,15 +8,15 @@ public class MathCalculator {
         return ru.job4j.math.MathFunction.sum(first, second)
                 + ru.job4j.math.MathFunction.multiply(first, second);
     }
+
     public static void main(String[] args) {
         System.out.println("Результат расчета равен: " + sumAndMultiply(10, 20));
     }
-
-    public static double sumOfMinusAndDel (double first, double second){
+    public static double sumOfMinusAndDel(double first, double second) {
         return ru.job4j.math.MathFunction.minus(first, second) + ru.job4j.math.MathFunction.del(first, second);
     }
+
     public static double sumOfAllOps (double first, double second){
         return ru.job4j.math.MathFunction.sum(first, second)+ru.job4j.math.MathFunction.minus(first, second)+ru.job4j.math.MathFunction.del(first, second)+ru.job4j.math.MathFunction.multiply(first, second);
     }
-
 }

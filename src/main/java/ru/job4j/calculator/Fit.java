@@ -1,10 +1,5 @@
 package ru.job4j.calculator;
-
-public class Fit {
-    package ru.job4j.calculator;
-
     public class Fit {
-
         public static double manWeight(short height) {
             // Formula for man's weight: (height in cm - 100) * 1.15
             return (height - 100) * 1.15;
@@ -20,5 +15,5 @@ public class Fit {
             double man = Fit.manWeight(height);
             System.out.println("Man 187 cm is " + man + " kg");
         }
+
     }
-}
