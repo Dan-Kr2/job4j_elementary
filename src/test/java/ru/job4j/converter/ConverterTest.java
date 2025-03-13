@@ -13,6 +13,7 @@ class ConverterTest {
         double value = 0.0001f;
         assertThat(output).isEqualTo(expected, withPrecision(value));
     }
+
     @Test
     void whenConvert180RblThen3Dollar() {
         double input = 180;
