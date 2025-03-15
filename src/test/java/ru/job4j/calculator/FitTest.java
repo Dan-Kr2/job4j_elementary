@@ -5,7 +5,6 @@ import static org.assertj.core.api.Assertions.*;
 
 class FitTest {
 
-
     @Test
     void whenMan180Then92() {
         short input = 180;
@@ -20,6 +19,5 @@ class FitTest {
         double expected = 69;
         double output = Fit.womanWeight(input);
         assertThat(output).isEqualTo(expected, withPrecision(0.01));
-        /* Написать свой тест. */
     }
 }
