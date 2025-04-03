@@ -1,6 +1,6 @@
 package ru.job4j.array;
 
-import javax.print.DocFlavor;
+import com.sun.source.tree.BreakTree;
 
 public class FindLoop {
     public static int indexOf(int[] data, int element) {
@@ -12,5 +12,14 @@ public class FindLoop {
             }
         }
         return result;
+    }
+
+    public static int indexInRange(int[] data, int element, int start, int finish) {
+
+        for (int result = start; result <= finish; result++) {
+            if (data[result] == element) {
+                return result;
+            }
+        } return -1;
     }
 }
