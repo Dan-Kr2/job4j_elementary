@@ -5,16 +5,17 @@ import com.sun.source.tree.BreakTree;
 public class CheckPrimeNumber {
 
     public static boolean check(int number) {
+        boolean result = false;
        if (number == 1) {
-           return false;
+           return result;
        }
         for (int i = 2; i < number; i++) {
 
             if (number % i == 0) {
-                return false;
+                return result;
             }
             }
-        return true;
+        result = true;
+        return result;
     }
 }
-
